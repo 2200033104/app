@@ -5,23 +5,38 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            background: url('https://wallpapercave.com/wp/YsmdCUB.jpg') no-repeat center center/cover;
+            color: #ffffff;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 15px;
         }
         .social-icons {
             display: flex;
             gap: 20px;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
         .social-icons a img {
             width: 60px;
@@ -31,12 +46,26 @@
         }
         .social-icons a img:hover {
             transform: scale(1.2);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.6);
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
         }
     </style>
 </head>
 <body>
+    <!-- Header Section with Logo -->
+    <header>
+        <img src="https://tse4.mm.bing.net/th?id=OIP.9i9RajezYuihD_D_zQwDpAHaFo&pid=Api&P=0&h=180" alt="My Logo" class="logo">
+        <h1>My Social Profiles</h1>
+    </header>
 
+    <!-- Social Icons Section -->
     <div class="social-icons">
         <a href="https://github.com/2200033104" target="_blank" title="This takes you to Git">
             <img src="https://tse4.mm.bing.net/th?id=OIP.0XW5qRS_gKZnw42KGo0apgHaER&pid=Api&P=0&h=180" alt="GitHub">
@@ -73,5 +102,9 @@
         </a>
     </div>
 
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 Jahnavi | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
